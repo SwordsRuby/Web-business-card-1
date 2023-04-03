@@ -1,0 +1,410 @@
+/*zeroing*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+/*--------------------*/
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+.basic {
+  height: 100%;
+  width: 100%;
+  background: url(../images/bg.jpg) fixed center no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact_information {
+  border-radius: 50px;
+  width: 80%;
+  text-align: center;
+}
+
+.heading {
+  color: white;
+  font-size: 2rem;
+  margin: 5%;
+}
+
+.paragraph {
+  color: white;
+  font-size: 1rem;
+  margin: 5%;
+}
+
+.vertical_block_left_bottom {
+  background-color: rgba(223, 121, 4, 0.9);
+  width: 20px;
+  height: 160px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  animation-name: vertical_block_left_bottom;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+.vertical_block_left_top {
+  background-color: rgba(223, 121, 4, 0.9);
+  width: 20px;
+  height: 160px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: vertical_block_left_top;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+.horizontal_block_left_bottom {
+  background-color: rgba(223, 121, 4, 0.9);
+  width: 160px;
+  height: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  animation-name: horizontal_block_left_bottom;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+.horizontal_block_left_top {
+  background-color: rgba(223, 121, 4, 0.9);
+  width: 160px;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: horizontal_block_left_top;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+.vertical_block_right_top {
+  background-color: rgba(223, 121, 4, 0.9);
+  width: 20px;
+  height: 160px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  animation: vertical_block_right_top;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+.vertical_block_right_bottom {
+  background-color: rgba(223, 121, 4, 0.9);
+  width: 20px;
+  height: 160px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  animation: vertical_block_right_bottom;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+.horizontal_block_right_top {
+  background-color: rgba(223, 121, 4, 0.9);
+  width: 160px;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  animation: horizontal_block_right_top;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+.horizontal_block_right_bottom {
+  background-color: rgba(223, 121, 4, 0.9);
+  width: 160px;
+  height: 20px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  animation: horizontal_block_right_bottom;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes vertical_block_left_bottom {
+  0% {
+    bottom: 0;
+    left: 0;
+  }
+  100% {
+    bottom: 20%;
+    left: 5%;
+    background-color: orangered;
+  }
+}
+
+@keyframes vertical_block_left_top {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  100% {
+    left: 5%;
+    top: 20%;
+    background-color: orangered;
+  }
+}
+
+@keyframes horizontal_block_left_bottom {
+  0% {
+    bottom: 0;
+    left: 0;
+  }
+  100% {
+    bottom: 20%;
+    left: 5%;
+    background-color: orangered;
+  }
+}
+
+@keyframes horizontal_block_left_top {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  100% {
+    left: 5%;
+    top: 20%;
+    background-color: orangered;
+  }
+}
+
+@keyframes vertical_block_right_top {
+  0% {
+    right: 0;
+    top: 0;
+  }
+  100% {
+    right: 5%;
+    top: 20%;
+    background-color: orangered;
+  }
+}
+
+@keyframes vertical_block_right_bottom {
+  0% {
+    right: 0;
+    bottom: 0;
+  }
+  100% {
+    right: 5%;
+    bottom: 20%;
+    background-color: orangered;
+  }
+}
+
+@keyframes horizontal_block_right_top {
+  0% {
+    right: 0;
+    top: 0;
+  }
+  100% {
+    right: 5%;
+    top: 20%;
+    background-color: orangered;
+  }
+}
+
+@keyframes horizontal_block_right_bottom {
+  0% {
+    right: 0;
+    bottom: 0;
+  }
+  100% {
+    right: 5%;
+    bottom: 20%;
+    background-color: orangered;
+  }
+}
+
+@media (min-width: 768px) {
+  .heading {
+    font-size: 3rem;
+  }
+
+  .paragraph {
+    font-size: 2rem;
+  }
+
+  @keyframes vertical_block_left_bottom {
+    0% {
+      bottom: 0;
+      left: 0;
+    }
+    100% {
+      bottom: 20%;
+      left: 20%;
+      background-color: orangered;
+    }
+  }
+
+  @keyframes vertical_block_left_top {
+    0% {
+      left: 0;
+      top: 0;
+    }
+    100% {
+      left: 20%;
+      top: 20%;
+      background-color: orangered;
+    }
+  }
+
+  @keyframes horizontal_block_left_bottom {
+    0% {
+      bottom: 0;
+      left: 0;
+    }
+    100% {
+      bottom: 20%;
+      left: 20%;
+      background-color: orangered;
+    }
+  }
+
+  @keyframes horizontal_block_left_top {
+    0% {
+      left: 0;
+      top: 0;
+    }
+    100% {
+      left: 20%;
+      top: 20%;
+      background-color: orangered;
+    }
+  }
+
+  @keyframes vertical_block_right_top {
+    0% {
+      right: 0;
+      top: 0;
+    }
+    100% {
+      right: 20%;
+      top: 20%;
+      background-color: orangered;
+    }
+  }
+
+  @keyframes vertical_block_right_bottom {
+    0% {
+      right: 0;
+      bottom: 0;
+    }
+    100% {
+      right: 20%;
+      bottom: 20%;
+      background-color: orangered;
+    }
+  }
+
+  @keyframes horizontal_block_right_top {
+    0% {
+      right: 0;
+      top: 0;
+    }
+    100% {
+      right: 20%;
+      top: 20%;
+      background-color: orangered;
+    }
+  }
+
+  @keyframes horizontal_block_right_bottom {
+    0% {
+      right: 0;
+      bottom: 0;
+    }
+    100% {
+      right: 20%;
+      bottom: 20%;
+      background-color: orangered;
+    }
+  }
+}
